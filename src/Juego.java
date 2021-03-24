@@ -4,7 +4,7 @@ public class Juego {
 
 
     Scanner teclado = new Scanner(System.in);
-
+    int dado = ((int)(Math.random()*6-1+1)+6);
     public void inicio (){
 
         System.out.println();
