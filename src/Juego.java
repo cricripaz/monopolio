@@ -5,6 +5,14 @@ public class Juego {
 
     Scanner teclado = new Scanner(System.in);
     int dado = ((int)(Math.random()*6-1+1)+6);
+
+
+    Propiedad[] propiedades = new Propiedad[25];
+
+
+
+
+
     public void inicio (){
 
         System.out.println();
@@ -52,4 +60,14 @@ public class Juego {
             System.out.println("SALIENDO");
         }
     }
+
+
+    void crearPropiedades(){
+
+            propiedades[0] = new Propiedad(false,"Ronda de Valencia",60,"Cafe");
+
+    }
+
+
+
 }

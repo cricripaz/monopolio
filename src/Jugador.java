@@ -4,6 +4,7 @@ public class Jugador {
     private int cantidadPropiedades;
 
 
+
     public String getNombre() {
         return nombre;
     }
