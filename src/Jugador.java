@@ -4,6 +4,11 @@ public class Jugador {
     private int cantidadPropiedades;
 
 
+    public Jugador(String nombre, int dinero, int cantidadPropiedades) {
+        this.nombre = nombre;
+        this.dinero = dinero;
+        this.cantidadPropiedades = cantidadPropiedades;
+    }
 
     public String getNombre() {
         return nombre;
