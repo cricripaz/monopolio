@@ -8,6 +8,9 @@ public class Juego {
 
 
     Propiedad[] propiedades = new Propiedad[25];
+    ArcaComunal[] arcaComunal = new ArcaComunal[12];
+    Casualidad[] casualidades = new Casualidad[12];
+
 
 
     Jugador jugadores[];
@@ -73,6 +76,17 @@ public class Juego {
             propiedades[23] = new Propiedad( false , "F. Short Line" , 200 , "Ferrocarril" );
             propiedades[24] = new Propiedad( false , "F. Reading" , 200 , "Ferrocarril" );
             propiedades[25] = new Propiedad( false , "F. B & O" , 200 , "Ferrocarril" );
+    }
+
+    void crearTarjetas(){
+
+        arcaComunal[0] = new ArcaComunal("Canal 13 Gana 15 Martin FIERRO " ,"gana 50",50);
+
+
+
+
+        casualidades[0]= new Casualidad("Lae editorial de libros escolares pega una licitacion" ,"gana 50" ,50);
+
     }
 
 
