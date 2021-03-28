@@ -6,5 +6,6 @@ public class PruebaJuego {
         Juego objetoJuego = new Juego();
 
         objetoJuego.inicio();
+
     }
 }

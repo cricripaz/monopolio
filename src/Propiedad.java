@@ -1,8 +1,23 @@
 public class Propiedad {
     private boolean esHotel;
     private String nombre;
-    private double valor;
+    private int valor;
     private String color;
+    private boolean tieneDueno ;
+    private boolean isPropiedad;
+
+    public Propiedad() {
+    }
+
+    public Propiedad(boolean esHotel, String nombre, int valor, String color, boolean tieneDueno, boolean isPropiedad) {
+        this.esHotel = esHotel;
+        this.nombre = nombre;
+        this.valor = valor;
+        this.color = color;
+        this.tieneDueno = tieneDueno;
+        this.isPropiedad = isPropiedad;
+    }
+
 
     public boolean isEsHotel() {
         return esHotel;
@@ -20,11 +35,11 @@ public class Propiedad {
         this.nombre = nombre;
     }
 
-    public double getValor() {
+    public int getValor() {
         return valor;
     }
 
-    public void setValor(double valor) {
+    public void setValor(int valor) {
         this.valor = valor;
     }
 
@@ -36,10 +51,19 @@ public class Propiedad {
         this.color = color;
     }
 
-    public Propiedad(boolean esHotel, String nombre, double valor , String color) {
-        this.esHotel = esHotel;
-        this.nombre = nombre;
-        this.valor = valor;
-        this.color = color;
+    public boolean isTieneDueno() {
+        return tieneDueno;
+    }
+
+    public void setTieneDueno(boolean tieneDueno) {
+        this.tieneDueno = tieneDueno;
+    }
+
+    public boolean isPropiedad() {
+        return isPropiedad;
+    }
+
+    public void setPropiedad(boolean propiedad) {
+        isPropiedad = propiedad;
     }
 }
